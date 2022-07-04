@@ -1,0 +1,145 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+  }
+}
+  
+body{
+    background-color:pink;
+}
+.navStyle{
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+}
+.navTitle{
+    color: rgb(163, 105, 105);
+    margin-top: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 7px 7px 10px rgb(247, 199, 199);
+}
+.title{
+    color: rgb(255, 0, 140)  ;
+    text-shadow: 5px 5px 12px red;
+    margin-top: 40px;
+    font-size: 52px;
+    text-align: center;
+    padding-top: 40px;
+}
+.titlee{
+    color: rgb(255, 0, 140) ;
+    text-shadow: 5px 5px 12px red;
+    margin-top: -20px;
+    font-size: 44px;
+    text-align: center;
+}
+.homeIcon{
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.cartIcon{
+    border-radius: 27px;
+    margin-top: 5px;
+}
+.welcomeDiv{
+    margin-top: 10px;
+    background-image: url(icons-photos/femaleBackground.jpg);
+    background-size: 100%;
+}
+.femalePhoto{
+    height: 300px;
+    width: 100%;
+}
+.femaleProducts{
+    box-sizing: border-box;
+}
+.femaleRow{
+    margin-top: 50px;
+}
+.productStyle{
+    padding: 5px;
+    padding-left: 10px;
+}
+img{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    /*transition: transform 2s;*/
+}
+/* img:hover{
+    transform: scale(1.25 , 1.4);
+} */
+.btnBuy{
+    color: brown;
+    background-color: white;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 7px;
+}
+.btnBuy:hover{
+    color: white;
+    background-color: rgb(117, 117, 117);
+}
+.shoesStyle img{
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 17px;
+}
+.footer{
+    height: auto;
+    background-color:  rgb(241, 239, 206) ;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border-radius:10px;
+    padding-top: 15px;
+    /* padding-left: 50px; */
+    padding-bottom: 20px;
+}
+.footer a{
+    color: rgb(163, 105, 105);
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 12%;
+    padding-top: 15px;
+    text-align: center;
+}
+.footer a:hover{
+    color: red;
+}
