@@ -1,0 +1,309 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+    transition: .5s;
+}
+  
+[class*="col-"]{
+      float: left;
+}
+:root{
+    --menColorBtn :#17a2b8;
+    --womenColorBtn :rgb(255 134 153);
+    --childrenColorBtn:#f3cd00;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+     [class*="col-"] {
+      width: 100%;  
+     }
+     .container.card div .left-side-button,
+     .container.card div .right-side-button{
+        display: none;
+     }
+  }
+
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.links{
+    display: flex;
+    justify-content: end;
+}
+.active{
+    background-color: #eee;
+    border-radius: 4px;
+}
+.nav-item{
+    margin: 0px 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bigDiv{
+    position: relative;
+}
+.bigDiv img{
+    height: 580px;
+}
+.bigDiv .carousel-caption img{
+    height: 168px;
+    position: relative;
+    right: 40%;
+    top: -110px;
+}
+
+.bigDiv .carousel-caption p{
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-style: italic;
+    position: relative;
+}
+
+.wel{
+    position: relative;
+    font-size: 55px;
+    top: -95px;
+    width: 210px;
+    text-align: center;
+    left: 22%;
+    color: white;
+    text-shadow: none;
+}
+/* -------------------------------- end header ------------------------------- */
+
+
+.container .col-12{
+    margin: 0px;
+    padding: 0px;
+}
+
+.men-fashion,
+.women-fashion,
+.children-fashion{
+    padding-left: 0px;
+    font-size: 34px;
+    font-family: fangsong;
+    padding-top: 15px;
+    font-weight: 600;
+    color:  var(--menColorBtn);
+    text-align: center;
+}
+.women-fashion{
+    color: var(--womenColorBtn);
+}
+.children-fashion{
+    color: var(--childrenColorBtn);
+}
+
+
+.container.card{
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 40px;
+    border-color: rgb(246, 246, 246);
+    /* border-color: transparent; */
+}
+.left-side-button,
+.right-side-button{
+    position: absolute;
+    height: auto;
+    background-color: #6ebbd9;
+    border: none;
+    left: -30px;
+    top: calc(50% - 29px);
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    padding: 11px 4px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.right-side-button{
+    left: calc(100% + 2px);
+}
+.left-side-button:hover,
+.right-side-button:hover{
+    color: #a8a8a8;
+    background-color: #fff;
+    border: 1px solid lightgray;
+}
+.menColorBtn{
+    background-color: var(--menColorBtn);
+}
+.womenColorBtn{
+    background-color: var(--womenColorBtn);
+}
+.childrenColorBtn{
+    background-color: var(--childrenColorBtn);
+}
+/* ------------------------ product style ------------------------ */
+.product{
+    position: relative;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.product .card{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.product .card:hover{
+    box-shadow: 0px 0px 10px rgb(119, 126, 129);
+}
+
+.product .card img{
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.product .card .details-men,
+.product .card .details-women,
+.product .card .details-children{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #019ecd;
+    padding-top: 10px;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+.product .card .details-women{
+    color: var(--womenColorBtn);
+}
+.product .card .details-children{
+    color: goldenrod;
+}
+
+.star{
+    color:gold
+}
+
+.product .card .btn-outline-info {
+    width: fit-content;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.product-btn-color-men{
+    color: var(--menColorBtn);
+    background-color: white;
+    border-color: var(--menColorBtn);
+}
+.product-btn-color-women{
+    color: var(--womenColorBtn);
+    background-color: white;
+    border-color: var(--womenColorBtn);
+}
+.product-btn-color-children{
+    color: var(--childrenColorBtn);
+    background-color: white;
+    border-color: var(--childrenColorBtn);
+}
+.product-btn-color-men:hover{
+    color: white;
+    background-color: var(--menColorBtn);
+    border-color: transparent;
+}
+.product-btn-color-women:hover{
+    color: white;
+    background-color: var(--womenColorBtn);
+    border-color: transparent;
+}
+.product-btn-color-children:hover{
+    color: white;
+    background-color: var(--childrenColorBtn);
+    border-color: transparent;
+}
+
+
+.new-div-for-men,
+.new-div-for-women,
+.new-div-for-children{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    color: white;
+    font-size: 15px;
+    background-color: var(--menColorBtn);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-style: italic;
+}
+.new-div-for-women{
+    background-color: var(--womenColorBtn);
+}
+.new-div-for-children{
+    background-color: var(--childrenColorBtn);
+}
+
+
+.animation-left{
+    animation-name: getProductLeft;
+    animation-duration: 1s;
+}
+.animation-right{
+    animation-name: getProductRight;
+    animation-duration: 1s;
+}
+@keyframes getProductLeft {
+    from{transform: translateX(30px);}
+    to{transform: translateX(0px);}
+}
+@keyframes getProductRight {
+    from{transform: translateX(-30px);}
+    to{transform: translateX(0px);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
