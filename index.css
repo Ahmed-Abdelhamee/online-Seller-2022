@@ -15,19 +15,19 @@
     box-sizing: border-box;
     transition: .5s;
 }
-  
+
 [class*="col-"]{
       float: left;
 }
 :root{
     --menColorBtn :#17a2b8;
-    --womenColorBtn :rgb(255 134 153);
-    --childrenColorBtn:#f3cd00;
+    --womenColorBtn :rgb(253 88 114);
+    --childrenColorBtn:#cc00ff;
 }
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
      [class*="col-"] {
-      width: 100%;  
+      width: 100%;
      }
      .container.card div .left-side-button,
      .container.card div .right-side-button{
@@ -237,16 +237,16 @@
 }
 
 
-.new-div-for-men,
-.new-div-for-women,
-.new-div-for-children{
+.new-div-for-men-circle,
+.new-div-for-women-circle,
+.new-div-for-children-circle{
     position: absolute;
     top: 5px;
     right: 0;
     height: 40px;
     width: 40px;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     background-color: var(--menColorBtn);
     border-radius: 50%;
     display: flex;
@@ -255,12 +255,80 @@
     font-weight: 600;
     font-style: italic;
 }
-.new-div-for-women{
+.new-div-for-women-circle{
     background-color: var(--womenColorBtn);
 }
-.new-div-for-children{
+.new-div-for-children-circle{
     background-color: var(--childrenColorBtn);
 }
+
+.new-div-for-men-star,
+.new-div-for-women-star,
+.new-div-for-children-star{
+    position: absolute;
+    border-radius: 0px;
+    width: 30px;
+    height: 29px;
+    top: 7px;
+    right: 7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+    z-index: 2;
+    border: none;
+}
+.new-div-for-men-star::before,
+.new-div-for-men-star::after,
+.new-div-for-women-star::before,
+.new-div-for-women-star::after,
+.new-div-for-children-star::before,
+.new-div-for-children-star::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.new-div-for-men-star::before,
+.new-div-for-women-star::before,
+.new-div-for-children-star::before{
+    transform: rotate(45deg);
+}
+.new-div-for-men-star::before,
+.new-div-for-men-star::after{
+    background-color: var(--menColorBtn);
+}
+.new-div-for-women-star::before,
+.new-div-for-women-star::after{
+    background-color: var(--womenColorBtn);
+}
+.new-div-for-children-star::before,
+.new-div-for-children-star::after{
+    background-color: var(--childrenColorBtn);
+}
+.product:hover .new-div-for-men-star::before,
+.product:hover .new-div-for-women-star::before,
+.product:hover .new-div-for-children-star::before{
+    animation: starRotateBefore;
+    animation-duration: 2s;
+}
+.product:hover .new-div-for-men-star::after,
+.product:hover .new-div-for-women-star::after,
+.product:hover .new-div-for-children-star::after{
+    animation: starRotateAfter;
+    animation-duration: 2s;
+}
+
+
+
 
 
 .animation-left{
@@ -279,6 +347,62 @@
     from{transform: translateX(-30px);}
     to{transform: translateX(0px);}
 }
+@keyframes starRotateBefore {
+    to{transform: rotate(405deg);}
+}
+@keyframes starRotateAfter {
+    to{transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
