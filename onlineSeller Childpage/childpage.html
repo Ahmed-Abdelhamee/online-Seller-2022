@@ -4,45 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Child Part</title>
-    <link rel="stylesheet" href="childpage.css">
-    <script src="childpage.js"></script>
-
+    <link rel="stylesheet" href="./childpage.css">
+    <script src="childpage.js" defer></script>
+    <!-- AOS animation link -->
+    <link rel="stylesheet" href="../dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link bootsrap file -->
+    <link rel="stylesheet" href="../bootsrap 4.6/bootstrap source css/bootstrap.min.css">
+    <!-- link bootsrap file js -->
+    <script src="../bootsrap 4.6/bootstrap source js/jquery.slim.min.js"></script>
+    <script src="../bootsrap 4.6/bootstrap source js/bootstrap.bundle.min.js"></script>
 
 </head>
 
 <body>
-    
-    <div class="header col-12">
-        <nav class="navStyle ">
-            
-            <a href="../index.html">
-                <i class='fa fa-home ' style="font-size: 50px; margin: 15px; margin-bottom: 25px;"></i>
-            </a>
-            <a href="../Product Detailed/productDetailed.html">
-                <i class="fa fa-cart-plus " style="font-size:50px"></i>
-            </a>
-            <span class="title">Here You Can Get The Best And Latest children's Fashion</span>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="../index.html"><img src="../photos/lumba.jpg" alt=""></a>
+          <!-- <a class="navbar-brand" href="./index.html">LIMUPA</a> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse links" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="">children</a>
+                  <a class="dropdown-item" href="../onlineSeller Menpage/menpage.html">Mens</a>
+                  <a class="dropdown-item" href="../veiled-fashion/index.html">womens</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://wa.me?+201124928181">contact us</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ahmedabdelhameed.website">About us</a>
+            </li>
+            </ul>
+          </div>
         </nav>
-    </div>
-    <div class="welcomming col-12 ">
-        <p class="p1"data-aos="fade-up" data-aos-duration="1500">Welcome To Our</p>
-        <p class="p2"data-aos="fade-up" data-aos-duration="1500">Child Part</p>
-    </div>
-    <!-- <div class="col-12">
-        <div class="col-2"> </div> 
-        <div class="col-8" data-aos="fade-up" data-aos-duration="1500">
-            <img src="onlineShop.jpg" alt="">
+      </header>
+
+    <div class="welcome-text col-12 ">
+        <div class="div-text">
+            <p class="p1"data-aos="fade-up" data-aos-duration="1500">Welcome To Our</p>
+            <p class="p2"data-aos="fade-up" data-aos-duration="1500">Child Part</p>
         </div>
-        <div class="col-2"> </div>
-    </div> -->
+    </div>
   
     <div class="col-12" style="margin-top: 30px;">
-        <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childDress1.jpg"  onclick="btnBuy('childDress1.jpg ')" alt="">
@@ -50,7 +67,7 @@
                 <button type="button" class="btnBuy" onclick="btnBuy('childDress1.jpg ')">Buy 200LE</button>
             </center></a>
         </div>
-        <div class="col-3"  data-aos="fade-left" data-aos-duration="1500">
+        <div class="col-sm-3"  data-aos="fade-left" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childDress2.jpg" onclick="btnBuy(' childDress2.jpg')" alt="">
@@ -58,7 +75,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy(' childDress2.jpg')">Buy 222LE</button>
                 </center></a>
         </div>
-        <div class="col-3"  data-aos="fade-right" data-aos-duration="1500">
+        <div class="col-sm-3"  data-aos="fade-right" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childDress3.jpg" onclick="btnBuy(' childDress3.jpg')" alt="">
@@ -66,7 +83,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy(' childDress3.jpg')">Buy 310</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-down" data-aos-duration="1500">
+        <div class="col-sm-3" data-aos="fade-down" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childDress4.jpg" onclick="btnBuy(' childDress4.jpg')" alt="">
@@ -77,7 +94,7 @@
     </div>
 
     <div class="col-12">
-        <div class="col-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth.jpg" onclick="btnBuy('childCloth.jpg ')" alt="">
@@ -85,7 +102,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childCloth.jpg ')">Buy 155LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth2.jpg" onclick="btnBuy(' childCloth2.jpg')" alt="">
@@ -93,7 +110,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy(' childCloth2.jpg')">Buy 169LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="3000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth3.jpg" onclick="btnBuy('childCloth3.jpg ')" alt="">
@@ -101,7 +118,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childCloth3.jpg ')">Buy 210LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-up" data-aos-duration="5000">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="5000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth4.jpg"  onclick="btnBuy(' childCloth4.jpg')" alt="">
@@ -112,7 +129,7 @@
     </div>
 
     <div class="col-12">
-        <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth5.jpg" onclick="btnBuy('childCloth5.jpg ')" alt="">
@@ -120,7 +137,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childCloth5.jpg ')">Buy 260LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-down" data-aos-duration="2000">
+        <div class="col-sm-3" data-aos="fade-down" data-aos-duration="2000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth6.jpg" onclick="btnBuy('childCloth6.jpg ')" alt="">
@@ -128,7 +145,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childCloth6.jpg ')">Buy 450LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-right" data-aos-duration="2500">
+        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="2500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth7.jpg" onclick="btnBuy(' childCloth7.jpg')" alt="">
@@ -136,7 +153,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy(' childCloth7.jpg')">Buy 200LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="3000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childCloth8.jpg" onclick="btnBuy('childCloth8.jpg ')" alt="">
@@ -147,7 +164,7 @@
     </div>
 
     <div class="col-12">
-        <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childPhoto.jpg" onclick="btnBuy('childPhoto.jpg ')" alt="">
@@ -155,7 +172,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childPhoto.jpg ')">Buy 220LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-right" data-aos-duration="2000">
+        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="2000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childSet2.jpg"  onclick="btnBuy('childSet2.jpg ')" alt="">
@@ -163,7 +180,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childSet2.jpg ')">Buy 300LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-left" data-aos-duration="2500">
+        <div class="col-sm-3" data-aos="fade-left" data-aos-duration="2500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childSet3.jpg" onclick="btnBuy('childSet3.jpg ')" alt="">
@@ -171,7 +188,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childSet3.jpg ')">Buy 420LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-down" data-aos-duration="3000">
+        <div class="col-sm-3" data-aos="fade-down" data-aos-duration="3000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childSet4.jpg" onclick="btnBuy('childSet4.jpg ')" alt="">
@@ -182,7 +199,7 @@
     </div>
 
     <div class="col-12">
-        <div class="col-3" data-aos="fade-right" data-aos-duration="1500">
+        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="1500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childShoes.jpg" onclick="btnBuy(' childShoes.jpg')" alt="">
@@ -190,7 +207,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy(' childShoes.jpg')">Buy 300LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-sm-3" data-aos="fade-left" data-aos-duration="2000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childShoes2.jpg"onclick="btnBuy('childShoes2.jpg ')" alt="">
@@ -198,7 +215,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childShoes2.jpg ')">Buy 500LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-down" data-aos-duration="2500">
+        <div class="col-sm-3" data-aos="fade-down" data-aos-duration="2500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childShoes3.jpg" onclick="btnBuy('childShoes3.jpg ')" alt="">    
@@ -206,7 +223,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childShoes3.jpg ')">Buy 180LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="3000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childShoes4.jpg" onclick="btnBuy('childShoes4.jpg ')" alt="">
@@ -217,7 +234,7 @@
     </div>
         
     <div class="col-12">
-        <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-sm-3" data-aos="fade-up" data-aos-duration="1500">
            
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childBag.jpg" onclick="btnBuy('childBag.jpg ')" alt="">
@@ -225,7 +242,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childBag.jpg ')">Buy 100LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-left" data-aos-duration="2000">
+        <div class="col-sm-3" data-aos="fade-left" data-aos-duration="2000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childBag2.jpg"onclick="btnBuy('childBag2.jpg ')" alt="">
@@ -233,7 +250,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy('childBag2.jpg ')">Buy 100LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-right" data-aos-duration="2500">
+        <div class="col-sm-3" data-aos="fade-right" data-aos-duration="2500">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childBag3.jpg" onclick="btnBuy(' childBag3.jpg')"alt="">
@@ -241,7 +258,7 @@
                     <button type="button" class="btnBuy" onclick="btnBuy(' childBag3.jpg')">Buy200LE</button>
                 </center></a>
         </div>
-        <div class="col-3" data-aos="fade-down" data-aos-duration="3000">
+        <div class="col-sm-3" data-aos="fade-down" data-aos-duration="3000">
 
             <a href="../Product Detailed/productDetailed.html">
                 <img src="photos/childBag4.jpg"onclick="btnBuy(' childBag4.jpg')" alt="">
@@ -251,18 +268,32 @@
         </div>
     </div>
 
-    <div class="footer col-12">
-        <a href="">Contact Us</a>
-        <a href="">Get Feedback</a>
-        <a href="">About Us</a>
-        <a href="">Report For Problems</a>
-    </div>
-    <br><br><br>
+    <footer class="col-12">
+        <div class="footer">
+          <div class="col-12">
+            <div class="col-sm-4 logo">
+              <img src="../photos/lumba.jpg" alt="">
+              <p class="text">the best fashion almost here</p>
+            </div>
+            <div class="col-sm-3 footer-links">
+              <ul>
+                <li data-aos="fade-up" data-aos-duration="1500"><a href="" target="blank">Contact Us</a></li>
+                <li data-aos="fade-up" data-aos-duration="1000"><a href="" target="blank">Send Feedback</a></li>
+                <li><a href="" target="blank">About This Site</a></li>
+                <li><a href="" target="blank">Report For Problems</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-5">
+              <p class="text" data-aos="fade-up" data-aos-duration="1500">We offer you our online store to display our products at competitive prices and strong material that lasts for a long virtual time, and we are working to reduce prices to make our shopping suitable for all people</p>
+            </div>
+          </div>  
+        </div>
+      </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+      <script src="../dist/aos.js"></script>
+      <script>
         AOS.init();
-    </script>
+      </script>
 
 </body>
 </html>

@@ -4,8 +4,9 @@
   <head>
     <title>OnlineShop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./photos/semicolon-modified.png"> 
     <!-- AOS animation link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./dist/aos.css" />
     <!-- link bootsrap file -->
     <link rel="stylesheet" href="./bootsrap 4.6/bootstrap source css/bootstrap.min.css">
     <!-- link bootsrap file js -->
@@ -24,7 +25,8 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">LIMUPA</a>
+        <a class="navbar-brand" href="./index.html"><img src="./photos/lumba.jpg" alt=""></a>
+        <!-- <a class="navbar-brand" href="./index.html">LIMUPA</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,16 +40,16 @@
                 pages
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">children</a>
-                <a class="dropdown-item" href="#">Mens</a>
+                <a class="dropdown-item" href="./onlineSeller Childpage/childpage.html">children</a>
+                <a class="dropdown-item" href="./onlineSeller Menpage/menpage.html">Mens</a>
                 <a class="dropdown-item" href="./veiled-fashion/index.html">womens</a>
               </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">contact us</a>
+                <a class="nav-link" href="https://wa.me?+201124928181">contact us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="https://ahmedabdelhameed.website">About us</a>
             </li>
           </ul>
         </div>
@@ -56,48 +58,269 @@
     
     <section>
       <div class="bigDiv">
-        <img src="./photos/0.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
+        <img src="./photos/bg.jpg" id="bgImg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
           <img src="./photos/10.png" class="frist" data-aos="zoom-out-right" data-aos-duration="3000" alt="photo">
           <p class="wel" data-aos="flip-up" data-aos-duration="3000">welcome to LIMUPA</p>
         </div>
       </div>
+      
       <!-- ------------- Men Fashion ------------- -->
-      <h1 class="container men-fashion">Men Fashion</h1>
+      <div class="container">
+        <p class="promo-text-for-men" data-aos="zoom-out-up" data-aos-duration="500">* We offer you a group of the best international fashion at great prices *</p>
+        <div class="promo">
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./onlineSeller Menpage/photos/men fashion1.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+            <img src="./onlineSeller Menpage/photos/men fashion2.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./onlineSeller Menpage/photos/men fashion3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- products div -->
+      <div class="col-12 category-name"> <h1 class="men-fashion-title">Men Fashion</h1></div>
       <div class="container card">
-        <div class="col-12" id="menProducts"> </div>
+        <div class="col-12" id="container1-Products"> </div>
       </div>
 
       <!-- ------------- Women Fashion ------------- -->
-      <h1 class="container women-fashion">Women Fashion</h1>
+      <div class="container">
+        <p class="promo-text-for-women" data-aos="zoom-out-up" data-aos-duration="500">* New and wonderful costumes in our store and suitable discounts. We hope you like it *</p>
+        <div class="promo">
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./veiled-fashion/icons-photos/women2.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+            <img src="./veiled-fashion/icons-photos/women4.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./veiled-fashion/icons-photos/women3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- products div -->
+      <div class="col-12 category-name"><h1 class="women-fashion-title">Women Fashion</h1></div>
       <div class="container card">
-        <div class="col-12" id="womenProducts"> </div>
+        <div class="col-12" id="container2-Products"> </div>
       </div>
 
       <!-- ------------- Children Fashion ------------- -->
-      <h1 class="container children-fashion">Children Fashion</h1>
+      <div class="container">
+        <p class="promo-text-for-children" data-aos="zoom-out-up" data-aos-duration="500">*The most beautiful little children's clothes are very, very wonderful, colorful and full of life *</p>
+        <div class="promo">
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./onlineSeller Childpage/photos/child.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+            <img src="./onlineSeller Childpage/photos/child2.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./onlineSeller Childpage/photos/child3.webp" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- products div -->
+      <div class="col-12 category-name"><h1 class="children-fashion-title">Children Fashion</h1></div>
       <div class="container card">
-        <div class="col-12" id="childrenProducts"> </div>
+        <div class="col-12" id="container3-Products"> </div>
       </div>
       
-    </section>
-
-
-      <!-- <footer class="footer col-12">
-          <a href="" target="blank">Contact Us</a>
-          <a href="" target="blank">Send Feedback</a>
-          <a href="" target="blank">About This Site</a>
-          <a href="" target="blank">Report For Problems</a>
-      </footer> -->
-
-
+      <!-- ------------- accessoires Fashion ------------- -->
+      <div class="container">
+        <p class="promo-text-for-accessoires" data-aos="zoom-out-up" data-aos-duration="500">*The variety of products shown are in great demand by many customers*</p>
+        <div class="promo">
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./accessiors/photos/35.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+            <img src="./accessiors/photos/amazing.jpg" alt="">
+          </div>
+          <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+            <img src="./accessiors/photos/_image8.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- products div -->
+      <div class="container card">
+      <div class="col-12 category-name"><h1 class="accessoires-fashion-title">accessoires </h1></div>
+        <div class="col-12" id="container4-Products"> </div>
+      </div>
       
 
-      <script src="./index.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+      <!-- *************************** Editable ************************ -->
+
+      <!-- ------------- container5 Fashion ------------- -->
+      <div class="container-fashion">
+        <div class="container">
+          <p class="promo-text-for-container5" data-aos="zoom-out-up" data-aos-duration="500"></p>
+          <div class="promo">
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <!-- products div -->
+        <div class="container card hidden">
+          <div class="col-12 category-name"><h1 class="container5-fashion-title"> </h1></div>
+            <div class="col-12" id="container5-Products"> </div>
+        </div>
+      </div>
+
+      <!-- ------------- container6 Fashion ------------- -->
+      <div class="container-fashion">
+        <div class="container">
+          <p class="promo-text-for-container6" data-aos="zoom-out-up" data-aos-duration="500"></p>
+          <div class="promo">
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <!-- products div -->
+        <div class="container card hidden">
+        <div class="col-12 category-name"><h1 class="container6-fashion-title"> </h1></div>
+          <div class="col-12" id="container6-Products"> </div>
+        </div>
+      </div>
+
+      
+      <!-- ------------- container7 Fashion ------------- -->
+      <div class="container-fashion">
+        <div class="container">
+          <p class="promo-text-for-container7" data-aos="zoom-out-up" data-aos-duration="500"></p>
+          <div class="promo">
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <!-- products div -->
+        <div class="container card hidden">
+          <div class="col-12 category-name"><h1 class="container7-fashion-title"> </h1></div>
+          <div class="col-12" id="container7-Products"> </div>
+        </div>
+      </div>
+      
+      <!-- ------------- container8 Fashion ------------- -->
+      <div class="container-fashion">
+        <div class="container">
+          <p class="promo-text-for-container8" data-aos="zoom-out-up" data-aos-duration="500"></p>
+          <div class="promo">
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <!-- products div -->
+        <div class="container card hidden">
+        <div class="col-12 category-name"><h1 class="container8-fashion-title"> </h1></div>
+          <div class="col-12" id="container8-Products"> </div>
+        </div>
+      </div>
+      
+      <!-- ------------- container9 Fashion ------------- -->
+      <div class="container-fashion">
+        <div class="container">
+          <p class="promo-text-for-container9" data-aos="zoom-out-up" data-aos-duration="500"></p>
+          <div class="promo">
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <!-- products div -->
+        <div class="container card hidden">
+          <div class="col-12 category-name"><h1 class="container9-fashion-title"> </h1></div>
+          <div class="col-12" id="container9-Products"> </div>
+        </div>
+      </div>
+      
+      <!-- ------------- container10 Fashion ------------- -->
+      <div class="conatiner-fashion">
+        <div class="container">
+          <p class="promo-text-for-container10" data-aos="zoom-out-up" data-aos-duration="500"></p>
+          <div class="promo">
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="1500">
+              <!-- <img src="" alt=""> -->
+            </div>
+            <div class="fashion-div" data-aos="zoom-out-up" data-aos-duration="3000">
+              <!-- <img src="" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <!-- products div -->
+        <div class="container card hidden">
+          <div class="col-12 category-name"><h1 class="container10-fashion-title"> </h1></div>
+          <div class="col-12" id="container10-Products"> </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="col-12">
+          <div class="col-sm-4 logo">
+            <img src="./photos/lumba.jpg" alt="">
+            <p class="text">the best fashion almost here</p>
+          </div>
+          <div class="col-sm-3 footer-links">
+            <ul>
+              <li data-aos="fade-left" data-aos-duration="1500"><a href="" target="blank">Contact Us</a></li>
+              <li data-aos="fade-left" data-aos-duration="1000"><a href="" target="blank">Send Feedback</a></li>
+              <li><a href="" target="blank">About This Site</a></li>
+              <li><a href="" target="blank">Report For Problems</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-5">
+            <p class="text" data-aos="fade-up" data-aos-duration="1500">We offer you our online store to display our products at competitive prices and strong material that lasts for a long virtual time, and we are working to reduce prices to make our shopping suitable for all people</p>
+          </div>
+        </div>  
+      </div>
+    </footer>
+    
+
+    <script src="./index.js"></script>
+    <script src="./dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
 </html>

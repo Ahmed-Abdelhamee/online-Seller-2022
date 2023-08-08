@@ -13,29 +13,112 @@
 
 * {
     box-sizing: border-box;
+    transition: .3s;
 }
 [class*="col-"]{
     float: left;
 }
+:root{
+    --menColor :#17a2b8;
+    --womenColor :rgb(253 88 114);
+    --childrenColorBtn:#cc00ff;
+    --accessoires:rgb(182 196 61);
+    --colorHeaderShadow:#e1e1e1;
+}
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    /* ---------- header------------ */
     [class*="col-"] {
-      width: 100%;
+    width: 100%;
     }
-  }
+    header nav .links {
+        display: flex;
+        justify-content: start;
+    }
+    .navbar .navbar-brand img{
+        height: 31px;
+    }
+    .header nav p {
+        font-size: 18px;
+    }
+    body .welocmeDiv {
+        background-image: url(./photos/Man2.jpg);
+    }
+    body .welocmeDiv #p2,body .welocmeDiv #p3 {
+        font-size: 30px;
+        font-style: italic;
+}
+    /* ---------------------- */
+
+     /* ------------ footer -------------- */
+     footer .footer{
+        background-image: none;
+     }
+     footer .footer .col-12 .logo img{
+        height: auto;
+     }
+     footer .footer .col-12 .logo p,
+     footer .footer .col-12 .text{
+        padding-left: 5px;
+        font-size: 17px;
+     }
+     footer .footer .col-12 .footer-links ul{
+        padding-left: 20px;
+        padding-bottom: 20px;
+     }
+     footer .footer .col-12 .footer-links ul li {
+        padding: 5px;
+        font-size: 15px;
+        text-decoration: underline;
+     }
+}
+
+  /* ------------------- header -----------------  */
+.navbar{
+    box-shadow: inset 2px -2px 5px var(--colorHeaderShadow);
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.5);
+    font-size: 15px;
+}
+.links{
+    display: flex;
+    justify-content: end;
+}
+.links ul li .dropdown-menu a{
+    font-size: 16px;
+}
+.active{
+    background-color: #f6f6f6;
+    border-radius: 4px;
+}
+.nav-item{
+    margin: 0px 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+/* -------------------------------------------------- */
 .welocmeDiv {
     margin-top: 20px;
     height: 300px;
-    background-image: url(Man.jpg);
+    background-image: url(./photos/Man.jpg);
     background-size: 100%;
     margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .bodyclass{
-    background-color: rgb(226, 226, 145);
+    background-color: #f3f3f3bd;
 }
 .header{
     height: auto;
-    background-color: rgb(189, 74, 74);
+    background-color: rgb(213 207 207);
     margin-top: 18px;
     border-radius: 18px;
     padding-top: 15px;
@@ -63,69 +146,112 @@ nav p{
     font-weight: bold;
     text-shadow: 7px 7px 7px white;
     color: rgb(172, 87, 87);
+    text-align: center;
 }
 #p3{
-    margin-top:-20px;
     margin-bottom: 30px;
     font-size: 38px;
     font-weight: bold;
     text-shadow: 7px 7px 7px white;
     color:  rgb(172, 87, 87);
+    text-align: center;
 }
 p:hover{
-    color: gold;
+    color: rgb(255, 255, 255);
 }
-.col-3 img{
+.col-12{
+    padding: 7px 40px;
+}
+.col-sm-3 img{
     width: 90%;
-    height: 290px;
+    height: 310px;
     margin-top: 15px;
     border-radius: 15px;
     margin-bottom: 10px;
+    margin-left: 5%;
 }
-.container1 img{
-    width: 90%;
-    height: 360px;
+.col-sm-3:hover{
+    border: 1px solid lightgray;
     border-radius: 15px;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px #296ba3;
+    transition: .5s;
 }
-.container2 img{
-    width: 90%;
-    height: 330px;
-    margin-top: 15px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-}
+
 .btnBuy{
     margin-top: 20px;
     margin-bottom: 35px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    height: 50px;
+    padding: 7px 10px;
     border-radius: 10px;
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
 }
 .btnBuy:hover{
     color: white;
-    background-color: gray;
+    background-color: #17a2b8;
 }
-.footer{
-    height: auto;
-    background-color: rgb(189, 74, 74);
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.footer a{
-    font-size: 25px;
-    color: rgb(20, 14, 14);
 
-    margin-left: 10%;
-    font-size: 25px;
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 7px 7px 7px palegoldenrod;
+
+
+/* ---------------------- footer ---------------------  */
+.footer{
+    position: relative;
+    background-image: url(../photos/1.jpg);
+    background-size: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    border-radius: 15px;
 }
-.footer a:hover{
+.footer .col-12{
+    position: absolute;
+    background-color: #40404080;
+    padding: 15px 20px;
+    padding-bottom: 70px;
+    opacity: .9;
+    box-shadow: 0px 0px 15px var(--colorHeaderShadow);
+    border-radius: 15px;
+    margin: 15px 2px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    width: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 0px;
+}
+.footer .col-12 .logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.footer .col-12 .logo img{
+    height: 60px;
+}
+.footer .col-12 .footer-links ul {
+    padding-top: 12px;
+}
+.footer .col-12 .footer-links ul li {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer .col-12 .text{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    word-spacing: 3px;
+    line-height: 35px;
+    padding-left: 40px;
+}
+.footer .col-12 .footer-links ul li a{
     color: white;
 }

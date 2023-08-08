@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Purchases</title>
-        <link rel="stylesheet" href="productDetailed.css">
-        <script src="./productDetailed.js" defer></script>
-    </head>
-
-    <body>
-        <nav class="col-12">
-            <div class="col-2" style="height: 10px;"></div>
-            <div class="col-8">
-                <h1>You Choose These Products</h1>
-            </div>
-            <div class="col-2" style="margin-top:20px;">
-                <a href="../onlineSeller.html"> Go To Home Shop</a> <br>
-                <a href="../onlineSeller Menpage/menpage.html"> Go To Men Part</a> <br>
-                <a href="../onlineSeller Femalepage/onlineSeller Femalepage.html"> Go To Women Part</a><br>
-                <a href="../onlineSeller Childpage/childpage.html">Go To children part</a>
-
-            </div>
-        </nav>
-        
-        <div class="customerProducts col-12">
-            <div class="col-12">
-                <div class="col-4" >
-                    <img src="buy.jpg" alt="buy" class="buy">
-                </div>
-                <div class="col-4 productChoosed" >
-                    <p class="productTiTle"> Your Product</p>
-                    <img src="" id="productBuy" alt="">
-                </div>
-                <div class="col-4">
-                    <form action="../Product Detailed/buy message.html">
-                        : الاسم المدون علي بطاقة الدفع   <br> <input type="text" placeholder="Name on credit card"> <br>
-                        : رقم بطاقة الدفع<br>  <input type="text" placeholder="Credit Card Number "> <br>
-                        : CVV رمز<br>  <input type="text" placeholder="CVV number"> <br>
-                        : شهر /سنة<br>  <input type="text" placeholder="year/month"> <br>
-                        <center><button type="submit"> Buy</button></center>
-                    </form>
-                </div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product details</title>
+    <link rel="stylesheet" href="./productDetailed.css">
+    <script src="./productDetailed.js" defer></script>
+</head>
+<body>
+    <nav class="col-12">
+        <div class="col-2" style="height: 10px;"></div>
+        <div class="col-8">
+            <h1>You Choose These Products</h1>
+        </div>
+        <div class="col-2" style="margin-top:20px;">
+            <a href="../onlineSeller.html"> Go To Home Shop</a> <br>
+            <a href="../onlineSeller Menpage/menpage.html"> Go To Men Part</a> <br>
+            <a href="../onlineSeller Femalepage/onlineSeller Femalepage.html"> Go To Women Part</a><br>
+            <a href="../onlineSeller Childpage/childpage.html">Go To children part</a>
 
         </div>
-    </body>
+    </nav>
+    
+    <div class="customerProducts col-12">
+        <div class="col-12">
+            <div class="col-4" >
+                <img src="buy.jpg" alt="buy" class="buy" style="border-radius: 20px;">
+            </div>
+            <div class="col-4 productChoosed" >
+                <p class="productTiTle"> Your Product</p>
+                <img src="" id="productBuy" alt="">
+            </div>
+            <div class="col-4">
+                <form action="../Product Detailed/buy message.html">
+                    : الاسم المدون علي بطاقة الدفع   <br> <input type="text" placeholder="Name on credit card"> <br>
+                    : رقم بطاقة الدفع<br>  <input type="text" placeholder="Credit Card Number "> <br>
+                    : CVV رمز<br>  <input type="text" placeholder="CVV number"> <br>
+                    : شهر /سنة<br>  <input type="text" placeholder="year/month"> <br>
+                    <center><button type="submit"> Buy</button></center>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
 </html>
