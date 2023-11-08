@@ -30,13 +30,13 @@ let homeData= [{
 },
 {
     productsList:[
-        {img:"./veiled-fashion/icons-photos/dress6.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"pink dress fashion",stars:3,link:"./veiled-fashion/index.html"},
-        {img:"./veiled-fashion/icons-photos/4.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"green dress fashion",stars:4.5,link:"./veiled-fashion/index.html"},
-        {img:"./veiled-fashion/icons-photos/dress7.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"green dress fashion",stars:4.5,link:"./veiled-fashion/index.html"},
-        {img:"./veiled-fashion/icons-photos/dress8.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"white dress fashion",stars:3,link:"./veiled-fashion/index.html"},
-        {img:"./veiled-fashion/icons-photos/femaleshoes2.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"gold shoes fashion",stars:4,link:"./veiled-fashion/index.html"},
-        {img:"./veiled-fashion/icons-photos/femaleshoes3.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"silver shoes fashion",stars:2.5,link:"./veiled-fashion/index.html"},
-        {img:"./veiled-fashion/icons-photos/dress10.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"sliver dress fashion",stars:4,link:"./veiled-fashion/index.html"},
+        {img:"./veildedFashion/icons-photos/dress6.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"pink dress fashion",stars:3,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/4.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"green dress fashion",stars:4.5,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/dress7.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"green dress fashion",stars:4.5,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/dress8.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"white dress fashion",stars:3,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/femaleshoes2.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"gold shoes fashion",stars:4,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/femaleshoes3.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"silver shoes fashion",stars:2.5,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/dress10.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"sliver dress fashion",stars:4,link:"./veildedFashion/index.html"},
     ],
     containerNumber:"container2",
     classAnimation:"0"
@@ -207,8 +207,6 @@ function homeCreate(){
     })
 }
 homeCreate();
-
-
 
 // -------- check which button clicked --------  
 function change(){
