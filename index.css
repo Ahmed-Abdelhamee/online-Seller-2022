@@ -306,7 +306,9 @@
 }
 
 .star{
-    color:gold
+    color:gold;
+    list-style: none;
+    text-align: center;
 }
 
 .product .card .btn-outline-info {

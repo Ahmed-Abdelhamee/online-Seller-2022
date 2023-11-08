@@ -115,13 +115,15 @@ function createStars(ele){
     let fullStar = Number.isInteger(ele.stars);
         for(let i=0;i<parseInt(ele.stars);i++){
             const star=document.createElement("li");
-            star.classList.add("fa","fa-star","ml-2","star")
+            star.classList.add("bi","bi-star-fill","ml-2","star")
+            star.style.float="left"
             divStars.appendChild(star)
             if(i==4) break;
         }
         if(!fullStar){
             const star=document.createElement("li");
-            star.classList.add("fa","fa-star-half-o","ml-2","star")
+            star.classList.add("bi","bi-star-half","ml-2","star")
+            star.style.float="left"
             divStars.appendChild(star)
         }
 }
@@ -149,6 +151,7 @@ function addClassesForElement(ele,index,productsAnimation){
     };
     link.classList.add("btn","btn-outline-info",`product-btn-color`);
     link.style.setProperty('--linkBtnColor',ele.NewDivShapeClass_bgColor);
+    divStars.classList.add("d-flex","justify-content-center","mb-2")
 }
 //------- create left and right buttons -------
 function create_left_right_Btns(ProductList,idTypeForPeople){
