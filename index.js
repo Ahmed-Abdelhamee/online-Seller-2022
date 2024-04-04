@@ -34,8 +34,8 @@ let homeData= [{
         {img:"./veildedFashion/icons-photos/4.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"green dress fashion",stars:4.5,link:"./veildedFashion/index.html"},
         {img:"./veildedFashion/icons-photos/dress7.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"green dress fashion",stars:4.5,link:"./veildedFashion/index.html"},
         {img:"./veildedFashion/icons-photos/dress8.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"white dress fashion",stars:3,link:"./veildedFashion/index.html"},
-        {img:"./veildedFashion/icons-photos/femaleshoes2.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"gold shoes fashion",stars:4,link:"./veildedFashion/index.html"},
-        {img:"./veildedFashion/icons-photos/femaleshoes3.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"silver shoes fashion",stars:2.5,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/f-shoes4.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"gold shoes fashion",stars:4,link:"./veildedFashion/index.html"},
+        {img:"./veildedFashion/icons-photos/f-shoes2.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"silver shoes fashion",stars:2.5,link:"./veildedFashion/index.html"},
         {img:"./veildedFashion/icons-photos/dress10.jpg",setNew:true,NewDivShape:"star",NewDivShapeClass:"new-div-star",NewDivShapeClass_bgColor:"rgb(255 110 133)",details:"sliver dress fashion",stars:4,link:"./veildedFashion/index.html"},
     ],
     containerNumber:"container2",
@@ -116,14 +116,12 @@ function createStars(ele){
         for(let i=0;i<parseInt(ele.stars);i++){
             const star=document.createElement("li");
             star.classList.add("bi","bi-star-fill","ml-2","star")
-            star.style.float="left"
             divStars.appendChild(star)
             if(i==4) break;
         }
         if(!fullStar){
             const star=document.createElement("li");
             star.classList.add("bi","bi-star-half","ml-2","star")
-            star.style.float="left"
             divStars.appendChild(star)
         }
 }

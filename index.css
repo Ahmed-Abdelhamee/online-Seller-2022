@@ -60,10 +60,7 @@
         padding-top: 0px;
         padding-bottom: 0px;
      }
-     .container.card div .left-side-button,
-     .container.card div .right-side-button{
-        display: none;
-     }
+     
      div .promo{
         gap: 5px;
      }
@@ -81,6 +78,10 @@
         font-size: 2.5vh;
      }
 
+     /* -------------- product ------------ */
+     div.product .card img{
+        height: 290px;
+    }
      /* ------------ footer -------------- */
      footer .footer{
         background-image: none;
@@ -102,9 +103,51 @@
         font-size: 15px;
         text-decoration: underline;
      }
-     
-  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    div.product .card .btn-outline-info {
+        width: 90%;
+        font-size: 1.7vw;
+    }
+}
+@media only screen and (max-width: 575px){
+    .container.card div .left-side-button,
+    .container.card div .right-side-button{
+    display: none;
+    }
+}
+@media only screen and (max-width: 290px){
+    /* -------------- product ------------ */
+    div.product .card img{
+        height: 240px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width:991px){
+    div.category-name .container{
+        padding: 0px;
+        margin: 0px;
+        width: 100% !important;
+        min-width: 100%;
+        max-width: 100% !important;
+    }
+    div.container{
+        max-width: 95% !important;
+    }
+    div.product .card img {
+        width: 100%;
+        height: 157px;
+    }
+    div.new-div-circle,
+    div .new-div-star{
+        height: 25px;
+        width: 25px;
+        font-size: 9px;
+    }
+    li.star{
+        font-size: 8px;
+    }
 
+}
 /* ------------------- header -----------------  */
 .navbar{
     box-shadow: inset 2px -2px 5px var(--colorHeaderShadow);
@@ -166,7 +209,9 @@
 }
 /* -------------------------------- end header ------------------------------- */
 
-
+section{
+    overflow-x: hidden;
+}
 
 /* -------------------------------- static promo style ------------------------------- */
 .promo{
@@ -309,6 +354,7 @@
     color:gold;
     list-style: none;
     text-align: center;
+    /* float: left; */
 }
 
 .product .card .btn-outline-info {
@@ -409,9 +455,9 @@
     position: absolute;
     height: auto;
     border: none;
-    left: -30px;
+    left: -20px;
     top: calc(50% - 29px);
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 700;
     color: white;
     padding: 11px 4px;
@@ -420,7 +466,7 @@
     background-color: var(--sideBtnBgColor);
 }
 .right-side-button{
-    left: calc(100% + 2px);
+    left: calc(99% + 2px);
 }
 .left-side-button:hover,
 .right-side-button:hover{
@@ -513,8 +559,6 @@
 .footer .col-12 .footer-links ul li a{
     color: white;
 }
-
-
 
 
 .hidden{
